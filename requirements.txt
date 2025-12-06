@@ -20,3 +20,5 @@ uvicorn==0.38.0
 pymongo==4.4.1
 resend==0.6.0
 openai==0.27.8
+anthropic==0.26.0
+python-jose==3.3.0
