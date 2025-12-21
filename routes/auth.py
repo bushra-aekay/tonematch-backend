@@ -52,8 +52,8 @@ async def verify_link_endpoint(token: str, response: Response):
         key=SESSION_COOKIE_NAME,
         value=session_jwt,
         httponly=True,
-        secure=os.getenv("ENV") == "production",
-        samesite="lax",
+        secure=True,
+        samesite="none",
         max_age=60 * 60 * 24 * 7 # 7 days 
     )
 
